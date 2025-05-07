@@ -4,3 +4,10 @@
     box-sizing: border-box;
     line-height: 30px;
 }
+img,
+video,
+svg{
+    max-width: 100%;
+    vertical-align: middle;
+    height: auto;
+}
