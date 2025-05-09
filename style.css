@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/great-vibes');
+@import url('https://fonts.cdnfonts.com/css/swansea');
 * {
     padding: 0;
     margin: 0;
@@ -28,4 +29,18 @@ main {
 }
 header {
 
+}
+h1 {
+    font-family: 'Great Vibes', sans-serif;
+    font-size: large;
+    font-weight: 700;
+    color: rgb(254, 236, 104);
+}
+h2 {
+    font-family: 'Swansea', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+}
+a {
+   text-decoration: none;
 }
