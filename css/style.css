@@ -30,6 +30,10 @@ main {
 header {
 
 }
+
+footer {
+    background-color: rgb(255, 247, 159);
+}
 h1 {
     font-family: 'Great Vibes', sans-serif;
     font-size: xx-large;
@@ -91,12 +95,62 @@ a {
     left: 50%;
 }
 header {
-    position: relative;
+    margin: auto;
+    width: 90rem;
+    height: 10rem;
     display: flex;
     justify-content: space-evenly;
+    background-color: aqua;
 }
-.ikoner {
-    position: absolute;
-    top: 1rem;
+.ikoner{    
+    top: 3rem;
     right: 6rem;
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    justify-content: space-evenly;
+}
+
+.hjelp {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem;
+    margin: 5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.overskrift {
+    width: 50rem;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    background-color: blue;
+}
+
+nav {
+    width: 70rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+}
+.knapper {
+    width: 90rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    background-color: blueviolet;
 }
