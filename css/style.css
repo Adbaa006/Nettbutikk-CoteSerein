@@ -27,9 +27,6 @@ main {
     display: flex;
     flex-direction: column;
 }
-header {
-
-}
 
 footer {
     background-color: rgb(255, 247, 159);
@@ -127,6 +124,7 @@ header {
 }
 
 .overskrift {
+    margin: auto;
     width: 50rem;
     padding-top: 2rem;
     display: flex;
@@ -134,23 +132,45 @@ header {
     flex-direction: column;
     align-content: center;
     text-align: center;
-    margin: auto;
     background-color: blue;
 }
 
 nav {
+    margin: auto;
     width: 70rem;
     height: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: auto;
+    background-color: chocolate;
 }
 .knapper {
+    margin: auto;
     width: 90rem;
+    height: 1.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: blueviolet;
+}
+.bla {
+    width: 15rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: auto;
-    background-color: blueviolet;
+    height: 1.8rem;
+    background-color: cornflowerblue;
+}
+
+.snarvei {
+    margin: auto;
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    background-color: crimson;
+}
+
+.container-kategorier {
+    display: grid;
 }
