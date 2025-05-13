@@ -29,6 +29,10 @@ main {
 }
 
 footer {
+    margin: auto;
+    width: 90rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     background-color: rgb(255, 247, 159);
 }
 h1 {
@@ -94,11 +98,15 @@ a {
 header {
     margin: auto;
     width: 90rem;
-    height: 10rem;
+    height: 8.5rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
     background-color: aqua;
+    padding-left: 5.1rem;
+    padding-right: 5.1rem;
 }
+
 .ikoner{    
     top: 3rem;
     right: 6rem;
@@ -117,6 +125,7 @@ header {
 }
 
 .info {
+    width: 70rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -127,6 +136,7 @@ header {
     margin: auto;
     width: 50rem;
     padding-top: 2rem;
+    padding-bottom: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -179,4 +189,21 @@ nav {
     gap: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+.produktbilder {
+    margin: auto;
+    width: 70rem;
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 470px 470px 470px;
+    grid-template-areas: 
+    'bilde1 bilde2 bilde3'
+    'bilde4 bilde5 bilde6'
+    'bilde7 bilde8 bilde9' ;
+    gap: 1.5rem;
+    outline-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+    background-color: darkseagreen;
 }
