@@ -37,7 +37,7 @@ footer {
 }
 h1 {
     font-family: 'Great Vibes', sans-serif;
-    font-size: xx-large;
+    font-size: 5rem;
     color: rgb(33, 50, 84);
 }
 h2 {
@@ -45,6 +45,12 @@ h2 {
     font-size: medium;
     font-weight: 200;
     color: rgb(33, 50, 84);
+}
+h5 {
+    font-family: 'Swansea', sans-serif;
+    font-size: medium;
+    font-weight: 200;
+    color: white;
 }
 a {
    text-decoration: none;
@@ -224,3 +230,72 @@ nav {
     margin: auto;
 }
 
+.produktside {
+    width: 70rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.venstre {
+    width: 45rem;
+    padding-top: 2rem;
+}
+
+.produktbilde {
+    width: 40rem;
+    margin: auto;
+    height: 60rem;
+}
+
+.mer {
+    display: flex;
+    flex-direction: column;
+}
+
+.kler {
+    width: 45rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.venstrevenstre {
+    display: flex;
+    flex-direction: row;
+}
+
+.produktinformasjon {
+    width: 22.5rem;
+}
+
+.frakt {
+    width: 22.5rem;
+}
+ul {
+    padding-left: 2rem;
+}
+
+.hoyre {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.produktinfo {
+    
+}
+
+.storrelse {
+    display: flex;
+    flex-direction: row;
+    width: 10rem;
+    align-content: space-between;
+}
+
+.velg {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
