@@ -235,12 +235,13 @@ nav {
     margin: auto;
     display: flex;
     flex-direction: row;
-    
+    background-color: rgb(181, 181, 255);
 }
 
 .venstre {
-    width: 45rem;
+    width: 50rem;
     padding-top: 2rem;
+    background-color: rgb(179, 255, 179);
 }
 
 .produktbilde {
@@ -252,35 +253,61 @@ nav {
 .mer {
     display: flex;
     flex-direction: column;
+    background-color: rgb(254, 221, 138);
 }
 
-.kler {
-    width: 45rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.container-outfit {
+    display: grid;
+    margin: auto;
+    width: 50rem;
+    display: grid;
+    grid-template-columns: 180px 180px 180px 180px;
+    grid-template-rows: 300px ;
+    grid-template-areas: 
+    'outfit1 outfit2 outfit3 outfit4';
+    gap: 0;
+    outline-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+    background-color: plum;
 }
 
 .venstrevenstre {
     display: flex;
     flex-direction: row;
+    background-color: darksalmon;
+}
+.switch {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    background-color: bisque;
 }
 
 .produktinformasjon {
     width: 22.5rem;
+    padding: 1rem;
+    background-color: darkorchid;
 }
 
 .frakt {
     width: 22.5rem;
+    padding: 1rem;
+    background-color: greenyellow;
 }
 ul {
     padding-left: 2rem;
 }
 
 .hoyre {
-    width: 25rem;
+    padding-top: 2rem;
+    line-height: 3rem;
+    width: 20rem;
+    height: 60rem;
     display: flex;
     flex-direction: column;
+    background-color: grey;
 }
 
 .produktinfo {
