@@ -74,6 +74,7 @@ p {
     font-family: 'Swansea', sans-serif;
     font-weight: 200;
     color: rgb(33, 50, 84);
+    padding-top: 2rem;
 
 }
 a {
@@ -155,11 +156,19 @@ header {
 }
 
 .info {
-    width: 70rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1rem;
+    display: grid;
+    /*margin: auto;*/
+    width: 90rem;
+    display: grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    grid-template-rows: 20px ;
+    grid-template-areas: 
+    'kontaktinfo sosialemedier nyhetsbrev rettigheter';
+    gap: 0;
+    padding: 2rem;
+    outline-color: black;
+    justify-content: space-evenly;
+    background-color: plum;
 }
 
 .overskrift {
@@ -321,7 +330,7 @@ nav {
     background-color: greenyellow;
 }
 ul {
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-family: 'Swansea', sans-serif;
     font-weight: 200;
     color: rgb(33, 50, 84);
