@@ -42,6 +42,18 @@ h1 {
 }
 h2 {
     font-family: 'Swansea', sans-serif;
+    font-size: xx-large;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+h3 {
+    font-family: 'Swansea', sans-serif;
+    font-size: large;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+h4 {
+    font-family: 'Swansea', sans-serif;
     font-size: medium;
     font-weight: 200;
     color: rgb(33, 50, 84);
@@ -51,6 +63,18 @@ h5 {
     font-size: medium;
     font-weight: 200;
     color: white;
+}
+h6 {
+    font-family: 'Swansea', sans-serif;
+    font-size: small;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+p {
+    font-family: 'Swansea', sans-serif;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+
 }
 a {
    text-decoration: none;
@@ -298,6 +322,9 @@ nav {
 }
 ul {
     padding-left: 2rem;
+    font-family: 'Swansea', sans-serif;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
 }
 
 .hoyre {
@@ -322,7 +349,27 @@ ul {
 }
 
 .velg {
+    width: 15rem;
+    height: 2rem;
+    margin: auto;
     background-color: black;
     display: flex;
     justify-content: center;
+}
+.storrelse {
+    display: grid;
+    width: 20rem;
+    display: grid;
+    grid-template-columns: 10px 10px 5px 5px 5px 10px 10px;
+    grid-template-rows: 50px ;
+    grid-template-areas: 
+    'storrelse1 storrelse2 storrelse3 storrelse4 storrelse5 storrelse6 storrelse7';
+    gap: 0;
+    outline-color: black;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+    background-color: plum;
+    outline: invert;
+    outline-color: black;
 }
