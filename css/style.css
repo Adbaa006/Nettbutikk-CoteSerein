@@ -30,7 +30,7 @@ main {
 
 footer {
     margin: auto;
-    width: 90rem;
+    width: 100%;
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: rgb(255, 247, 159);
@@ -128,7 +128,7 @@ a {
 }
 header {
     margin: auto;
-    width: 90rem;
+    width: 100%;
     height: 8.5rem;
     display: flex;
     justify-content: space-between;
@@ -146,26 +146,33 @@ header {
     width: 10rem;
     justify-content: space-evenly;
 }
-
 .hjelp {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 13.5rem 13.5rem 13.5rem 13.5rem;
+    grid-template-rows: 18rem ;
+    grid-template-areas: 
+    'butikkinfo finn sporsmol produsentinfo';
+    gap: 1.5rem;
     padding: 2rem;
-    margin: 5rem;
+    outline-color: black;
+    justify-content: space-evenly;
+    background-color: rgb(167, 221, 160);
 }
-
 .info {
     display: grid;
-    /*margin: auto;*/
-    width: 90rem;
+    margin: auto;
+    width: 100%;
     display: grid;
-    grid-template-columns: 10rem 10rem 10rem 10rem;
-    grid-template-rows: 20px ;
+    grid-template-columns: 23.5rem 23.5rem 23.5rem 23.5rem;
+    grid-template-rows: 10rem ;
     grid-template-areas: 
     'kontaktinfo sosialemedier nyhetsbrev rettigheter';
     gap: 0;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     outline-color: black;
     justify-content: space-evenly;
     background-color: plum;
@@ -226,8 +233,8 @@ nav {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-auto-rows: 1.8rem;
     gap: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
 }
 .produktbilder {
     margin: auto;
@@ -369,16 +376,15 @@ ul {
     display: grid;
     width: 20rem;
     display: grid;
-    grid-template-columns: 10px 10px 5px 5px 5px 10px 10px;
+    grid-template-columns: 7px 7px 7px 7px ;
     grid-template-rows: 50px ;
     grid-template-areas: 
-    'storrelse1 storrelse2 storrelse3 storrelse4 storrelse5 storrelse6 storrelse7';
+    'storrelse1 storrelse2 storrelse3 '
+    'storrelse4 storrelse5 storrelse6 storrelse7';
     gap: 0;
     outline-color: black;
     padding-top: 2rem;
     padding-bottom: 1.5rem;
     justify-content: space-around;
     background-color: plum;
-    outline: invert;
-    outline-color: black;
 }
