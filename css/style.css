@@ -78,6 +78,21 @@ p {
 a {
    text-decoration: none;
 }
+a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(33, 50, 84);
+}
+ul {
+    padding-left: 1rem;
+    font-family: 'Swansea', sans-serif;
+    font-weight: 200;
+    color: rgb(33, 50, 84);
+}
+li {
+    font-family: 'Swansea', sans-serif;
+    font-size: small;
+    color: rgb(33, 50, 84);
+}
 .container-forsteside {
     position: relative;
     text-align: center;
@@ -322,13 +337,6 @@ nav {
     width: 22.5rem;
     padding: 1rem;
 }
-ul {
-    padding-left: 1rem;
-    font-family: 'Swansea', sans-serif;
-    font-weight: 200;
-    color: rgb(33, 50, 84);
-}
-
 .hoyre {
     padding-top: 2rem;
     line-height: 3rem;
@@ -392,4 +400,7 @@ ul {
     width: 15rem;
     height: 2rem;
     background-color: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
 }
