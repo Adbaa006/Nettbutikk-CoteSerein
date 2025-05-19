@@ -7,8 +7,8 @@
 </head>
 <style>
 .sorterKnapp {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -16,10 +16,12 @@
 }
 
 .sorterKnapp:hover, .sorterKnapp:focus {
-  background-color: none;
+  background-color: rgb(237, 237, 237);
 }
 
 .sorter {
+    width: 35rem;
+    height: 1.8rem;
   position: relative;
   display: inline-block;
 }
@@ -27,6 +29,7 @@
 .sorteringsinnhold {
   display: none;
   position: absolute;
+  background-color: white;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -40,26 +43,26 @@
   display: block;
 }
 
-.sorter a:hover {background-color: #e9e9e9;}
+.sorter a:hover {background-color: #e8e8e8;}
 
 .show {display: block;}
 </style>
 </head>
 <body style="background-color:white;">
 
-<h2>Clickable Dropdown</h2>
-<p>Click on the button to open the dropdown menu.</p>
-
 <div class="sorter">
-  <button onclick="sorteringsFunksjon()" class="sorterKnapp">Dropdown</button><img src="icons/pilned.svg" alt="">
+  <button onclick="sorteringsFunksjon()" class="sorterKnapp">Sorter etter</button>
   <div id="sorteringsMeny" class="sorteringsinnhold">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <h4><a href="#home">Populært</a></h4>
+    <h4><a href="#about">Nyheter</a></h4>
+    <h4><a href="#contact">Høyest pris</a></h4>
+    <h4><a href="#lav">Lavest pris</a></h4>
+    <h4><a href="#tilbud">Tilbud</a></h4>
   </div>
 </div>
 
 <script>
+
 function sorteringsFunksjon() {
   document.getElementById("sorteringsMeny").classList.toggle("show");
 }
