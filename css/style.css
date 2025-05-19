@@ -91,22 +91,34 @@ li {
     font-size: small;
     color: rgb(33, 50, 84);
 }
-.container-forsteside {
+.container-forsteside,
+.container-produktbilde,
+.container-produktbildegrid {
     position: relative;
     text-align: center;
     color: white;
 }
-  
 .top-right {
     position: absolute;
+    width: 10rem;
     top: 3rem;
     right: 6rem;
     display: flex;
     flex-direction: row;
-    width: 10rem;
     justify-content: space-evenly;
 }
-  
+.overst-hoyre {
+    position: absolute;
+    width: 3rem;
+    top: 3rem;
+    right: 3rem;
+}
+.overst-hoyregrid {
+    position: absolute;
+    width: 2rem;
+    top: 1rem;
+    right: 1rem;
+}
 .centered {
     position: absolute;
     top: 50%;
