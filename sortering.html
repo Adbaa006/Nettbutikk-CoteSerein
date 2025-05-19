@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.sorterKnapp {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.sorterKnapp:hover, .sorterKnapp:focus {
+  background-color: none;
+}
+
+.sorter {
+  position: relative;
+  display: inline-block;
+}
+
+.sorteringsinnhold {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.sorteringsinnhold a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.sorter a:hover {background-color: #e9e9e9;}
+
+.show {display: block;}
+</style>
+</head>
+<body style="background-color:white;">
+
+<h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="sorter">
+  <button onclick="sorteringsFunksjon()" class="sorterKnapp">Dropdown</button><img src="icons/pilned.svg" alt="">
+  <div id="sorteringsMeny" class="sorteringsinnhold">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+<script>
+function sorteringsFunksjon() {
+  document.getElementById("sorteringsMeny").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.sorterKnapp')) {
+    var dropdowns = document.getElementsByClassName("sorteringsinnhold");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

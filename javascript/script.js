@@ -1,11 +1,10 @@
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
+function sorteringsFunksjon() {
+  document.getElementById("sorteringsMeny").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
 window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+  if (!event.target.matches('.sorterKnapp')) {
+    var dropdowns = document.getElementsByClassName("sorteringsinnhold");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];

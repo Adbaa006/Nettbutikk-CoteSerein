@@ -42,16 +42,12 @@
             </ul>
         </div>
         <div class="knapper">
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Sorter etter<img src="icons/pilned.svg" alt=""></button>
-                
-                <div id="myDropdown" class="dropdown-content">
-                    <a href="nyheter.html">Nyheter</a>
-                    <a href="mest_kjopt.html">Mest kjøpt</a>
-                    <a href="#hoyest-pris">Høyest pris</a>
-                    <a href="#lavest-pris">Lavest pris</a>
-                    <a href="tilbud.html">Tilbud</a>
-                    
+            <div class="sorter">
+                <button onclick="sorteringsFunksjon()" class="sorterKnapp">Dropdown</button>
+                <div id="sorteringsMeny" class="sorteringsinnhold">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
                 </div>
             </div>
             <div class="filter">
