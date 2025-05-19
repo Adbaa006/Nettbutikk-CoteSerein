@@ -452,8 +452,10 @@ ul.breadcrumb li a:hover {
 .velg {
     width: 15rem;
     height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     margin: auto;
-    background-color: black;
+    background-color: rgb(33, 50, 84);
     display: flex;
     justify-content: center;
 }
