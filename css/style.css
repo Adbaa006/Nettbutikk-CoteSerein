@@ -266,8 +266,6 @@ ul.breadcrumb li a:hover {
     font-size: 15px;
     border: none;
     cursor: pointer;
-    display: flex;
-    flex-direction: row;
 }
 
 .sorter {
@@ -298,6 +296,14 @@ ul.breadcrumb li a:hover {
 
 .show {
     display: block;
+}
+.ikon {
+    width: 2rem;
+}
+.tekst-ikon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 .filter {
     width: 35rem;
