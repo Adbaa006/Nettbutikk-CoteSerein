@@ -1,11 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/great-vibes');
 @import url('https://fonts.cdnfonts.com/css/swansea');
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
     line-height: 30px;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    
 }
+
 img,
 video,
 svg{
@@ -299,6 +304,7 @@ ul.breadcrumb li a:hover {
 }
 .ikon {
     width: 2rem;
+    cursor: pointer;
 }
 .tekst-ikon {
     display: flex;
