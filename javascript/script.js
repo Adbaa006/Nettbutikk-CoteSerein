@@ -31,3 +31,20 @@ window.onclick = function(event) {
     }
   }
 }
+
+function sokFunksjon2() {
+  document.getElementById("sokMeny2").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.sokKnapp')) {
+    var dropdowns = document.getElementsByClassName("sokinnhold");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}

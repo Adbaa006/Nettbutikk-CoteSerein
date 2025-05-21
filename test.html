@@ -11,19 +11,19 @@
 body {
   background-color: yellow;
 }
-.sokKnapp {
+.sokKnapp1 {
   color: rgb(33, 50, 84);
   border: none;
   cursor: pointer;
 }
 
 
-.sokbar {
+.sokbar1 {
   position: relative;
   display: inline-block;
 }
 
-.sokinnhold {
+.sokinnhold1 {
   display: none;
   position: absolute;
   background-color: white;
@@ -40,11 +40,11 @@ body {
   display: block;
 }
 
-.sokbar a:hover {background-color: #ddd;}
+.sokbar1 a:hover {background-color: #ddd;}
 
 .show {display: block;}
 
-#sokMeny {
+#sokMeny1 {
   width: fit-content;
   margin: auto;
   height: fit-content;
@@ -106,10 +106,10 @@ body {
 <body style="background-color:yellow;">
 <div class="glass">
   <div class="sokefunksjon">
-    <button onclick="sokFunksjon()">
+    <button onclick="sokFunksjon2()">
       <img class="ikon sokKnapp" src="icons/sok.svg" alt="">
     </button>
-    <div id="sokMeny" class="sokinnhold">
+    <div id="sokMeny1" class="sokinnhold">
       <div class="sokboks">
         <div class="sokbar">
             <div class="tekst">
@@ -148,8 +148,8 @@ body {
 
 <script>
 
-function sokFunksjon() {
-  document.getElementById("sokMeny").classList.toggle("show");
+function sokFunksjon2() {
+  document.getElementById("sokMeny2").classList.toggle("show");
 }
 
 

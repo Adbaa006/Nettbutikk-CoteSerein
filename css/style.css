@@ -18,6 +18,11 @@ svg{
     vertical-align: middle;
     height: auto;
 }
+.ikon {
+    width: 2rem;
+    cursor: pointer;
+}
+
 .grid-containerindex {
     display: grid;
     grid-template-columns: auto;
@@ -162,24 +167,32 @@ li {
     top: 50%;
     left: 50%;
 }
+
 header {
     width: auto;
-    height: 8.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1rem;
+    padding-top: 5rem;
     padding-left: 5.1rem;
     padding-right: 2.5rem;
     background-color: rgb(255, 255, 219);
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 6rem;
+    grid-template-areas: 
+    'kontakt navn ikoner';
+    gap: none;
+    justify-content: space-evenly;
 }
-
 .ikoner{    
-    top: 3rem;
+    top: 4.5rem;
     right: 6rem;
-    display: flex;
-    flex-direction: row;
-    width: 10rem;
+    position: absolute;
+    width: 12rem;
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    grid-template-rows: 40px;
+    grid-template-areas: 
+    'person hjerte kurv glass';
+    gap: 0;
     justify-content: space-evenly;
 }
 .hjelp {
@@ -231,7 +244,7 @@ nav {
     width: 70rem;
     height: 3rem;
     padding-top: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -306,10 +319,6 @@ ul.breadcrumb li a:hover {
 .sorter a:hover {
     background-color: #e8e8e8;
 }
-
-.show {
-    display: block;
-}
 .sokKnapp {
   color: rgb(33, 50, 84);
   border: none;
@@ -328,6 +337,9 @@ ul.breadcrumb li a:hover {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
+.show {
+    display: block;
+}
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -336,18 +348,49 @@ ul.breadcrumb li a:hover {
 }
 .sokbar a:hover {background-color: #ddd;}
 #sokMeny {
-  width: 35rem;
+  width: 28rem;
   margin: auto;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
   height: fit-content;
+  position: fixed;
+  top: 6rem;
+  left: 57rem;
+}
+#sokMeny2 {
+  width: 28rem;
+  margin: auto;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  height: fit-content;
+  position: fixed;
+  top: 7.5rem;
+  left: 54rem;
 }
 .tekst {
-  margin: auto;
+  /*margin: auto;*/
   width: 30rem;
   height: 1.8rem;
   margin: 1rem;
   display: flex;
   flex-direction: row;
   align-content: space-between;
+}
+.ikon1 {
+    width: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 7rem;
+    left: 84rem;
+}
+.ikon2 {
+    width: 2rem;
+    cursor: pointer;
+    position: fixed;
+    top: 8.3rem;
+    left: 82rem;
 }
 .skrive {
   margin: auto;
@@ -360,6 +403,7 @@ ul.breadcrumb li a:hover {
 }
 .text {
   width: 25rem;
+  outline: auto;
 }
 .sokenter {
   margin: auto;
@@ -367,8 +411,20 @@ ul.breadcrumb li a:hover {
   height: 2rem;
   background-color: rgb(33, 50, 84);
   color: white;
-  display: flex;
-  justify-content: center;
+  position: fixed;
+    top: 9.7rem;
+    left: 83.5rem;
+}
+.sokenter2 {
+    margin: auto;
+    width: 3rem;
+    height: 2rem;
+    background-color: rgb(33, 50, 84);
+    color: white;
+    position: fixed;
+    top: 11.2rem;
+    left: 81.5rem;
+    text-align: center;
 }
 .forslag {
   width: 30rem;
@@ -383,11 +439,6 @@ ul.breadcrumb li a:hover {
 }
 .nye {
   margin: 2rem;
-}
-.ikon {
-    width: 2rem;
-    cursor: pointer;
-    display: flex;
 }
 .tekst-ikon {
     display: flex;
