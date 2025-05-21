@@ -11,7 +11,7 @@
 body {
   background-color: yellow;
 }
-.sokknapp {
+.sokKnapp {
   color: rgb(33, 50, 84);
   border: none;
   cursor: pointer;
@@ -45,9 +45,12 @@ body {
 .show {display: block;}
 
 #sokMeny {
-  width: 35rem;
+  width: fit-content;
   margin: auto;
   height: fit-content;
+  position: fixed;
+  top: 5rem;
+  left: 40rem;
 }
 .tekst {
   margin: auto;
@@ -93,60 +96,65 @@ body {
 .nye {
   margin: 2rem;
 }
+.glass {
+  position: absolute;
+  top: 3rem;
+  left: 70rem;
+}
 </style>
 </head>
 <body style="background-color:yellow;">
-
-<div class="sokefunksjon">
-  <button onclick="sokFunksjon()">
-    <img class="ikon sokknapp" src="icons/sok.svg" alt="">
-  </button>
-  <div id="sokMeny" class="sokinnhold">
-    <div class="sokboks">
-    	<div class="sokbar">
-        	<div class="tekst">
-            	<h4>Hva ser du etter?</h4>
-                <div class="ikon"><img src="icons/kryss.svg" alt=""></div>
-            </div>
-            <div class="skrive">
-            	<input type="text" placeholder="Skriv her...">
-                <div class="sokenter">
-                	<h5>Søk</h5>
-                </div>
-            </div>
-        </div>
-        <div class="forslag">
-        	<div class="populere">
-            	<h4>Populære søk</h4>
-                <ul>
-                	<li><p>Jakke</p></li>
-                    <li><p>Bukse</p></li>
-                    <li><p>kjole</p></li>
-                </ul>
-            </div>
-            <div class="nye">
-            	<h4>Nyheter</h4>
-                <ul>
-                	<li><p>Jakke</p></li>
-                    <li><p>Bukse</p></li>
-                    <li><p>kjole</p></li>
-                </ul>
-            </div>
-        </div>
-    </div>	
+<div class="glass">
+  <div class="sokefunksjon">
+    <button onclick="sokFunksjon()">
+      <img class="ikon sokKnapp" src="icons/sok.svg" alt="">
+    </button>
+    <div id="sokMeny" class="sokinnhold">
+      <div class="sokboks">
+        <div class="sokbar">
+            <div class="tekst">
+                <h4>Hva ser du etter?</h4>
+                  <div class="ikon"><img src="icons/kryss.svg" alt=""></div>
+              </div>
+              <div class="skrive">
+                <input type="text" placeholder="Skriv her...">
+                  <div class="sokenter">
+                    <h5>Søk</h5>
+                  </div>
+              </div>
+          </div>
+          <div class="forslag">
+            <div class="populere">
+                <h4>Populære søk</h4>
+                  <ul>
+                    <li><p>Jakke</p></li>
+                      <li><p>Bukse</p></li>
+                      <li><p>kjole</p></li>
+                  </ul>
+              </div>
+              <div class="nye">
+                <h4>Nyheter</h4>
+                  <ul>
+                    <li><p>Jakke</p></li>
+                      <li><p>Bukse</p></li>
+                      <li><p>kjole</p></li>
+                  </ul>
+              </div>
+          </div>
+      </div>	
+    </div>
   </div>
 </div>
 
 <script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+
 function sokFunksjon() {
   document.getElementById("sokMeny").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+
 window.onclick = function(event) {
-  if (!event.target.matches('.sokknapp')) {
+  if (!event.target.matches('.sokKnapp')) {
     var dropdowns = document.getElementsByClassName("sokinnhold");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
