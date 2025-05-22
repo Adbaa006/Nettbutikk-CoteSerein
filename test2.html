@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+
+
+
+.kurv1 {
+  position: relative;
+  display: inline-block;
+}
+
+.kurvinnhold {
+    width: 30rem;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.kurvinnhold a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.kurv1:hover .kurvinnhold {display: block;}
+
+.vare {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bilde {
+    width: 10rem;
+}
+.beskrivelse {
+    width: 15rem;
+}
+</style>
+<body>
+   <div class="container-forsteside">
+            <img src="images/ChatGPT Image 9. mai 2025, 11_10_26.png" alt="">
+            <div class="top-right">
+                <div class="person">
+                    <a href="logginn.html">
+                        <div><img src="icons/logginn.svg" alt=""></div>
+                    </a>
+                </div>
+                <div class="hjerte">
+                    <a href="favoritter.html">
+                        <div><img src="icons/likt.svg" alt=""></div>
+                    </a>
+                </div>
+                <div class="kurv">
+                    <div class="kurv1">
+                        <button class="kurvKnapp">
+                            <a href="handlekurv.html">
+                            <div><img src="icons/vogn.svg" alt=""></div>
+                            </a>
+                        </button>
+                            <div class="kurvinnhold">
+                                <div class="vare">
+                                    <div class="bilde">woop</div>
+                                    <div class="beskrivelse">hei</div>
+                                </div>
+                                <div class="vare">
+                                    <div class="bilde">woop</div>
+                                    <div class="beskrivelse">hei</div>
+                                </div>
+                                <div class="vare">
+                                    <div class="bilde">woop</div>
+                                    <div class="beskrivelse">hei</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <div class="glass">
+                    <div class="sokefunksjon">
+                        <button onclick="sokFunksjon()">
+                            <img class="sokKnapp" src="icons/sok.svg" alt="">
+                        </button>
+                        <div id="sokMeny" class="sokinnhold">
+                            <div class="sokboks">
+                                <div class="sokbar">
+                                    <div class="tekst">
+                                        <h4>Hva ser du etter?</h4>
+                                        <div class="ikon1"><img src="icons/kryss.svg" alt=""></div>
+                                    </div>
+                                    <div class="skrive">
+                                        <input type="text" placeholder="Skriv her...">
+                                        <div class="sokenter">
+                                            <h5>Søk</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="forslag">
+                                    <div class="populere">
+                                        <h4>Populære søk</h4>
+                                        <ul>
+                                            <li><p>Jakke</p></li>
+                                            <li><p>Bukse</p></li>
+                                            <li><p>kjole</p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="nye">
+                                        <h4>Nyheter</h4>
+                                        <ul>
+                                            <li><p>Jakke</p></li>
+                                            <li><p>Bukse</p></li>
+                                            <li><p>kjole</p></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="centered"> <a href="index.html"><h1>Côte Serein</h1></a></div>
+            <div class="centered_lower">
+                <a href="dame1.html"><div><h2>Dame</h2></div></a>
+                <a href="herre1.html"><div><h2>Herre</h2></div></a>
+                <a href="barn1.html"><div><h2>Barn</h2></div></a>
+                <a href="accessories1.html"><div><h2>Accessories</h2></div></a>
+            </div>
+        </div> 
+</body>
+</html>
