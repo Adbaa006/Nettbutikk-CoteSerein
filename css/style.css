@@ -18,10 +18,6 @@ svg{
     vertical-align: middle;
     height: auto;
 }
-.ikon {
-    width: 2rem;
-    cursor: pointer;
-}
 
 .grid-containerindex {
     display: grid;
@@ -377,6 +373,10 @@ ul.breadcrumb li a:hover {
   display: flex;
   flex-direction: row;
   align-content: space-between;
+}
+.ikon {
+    width: 2rem;
+    cursor: pointer;
 }
 .ikon1 {
     width: 2rem;

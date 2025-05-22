@@ -7,165 +7,165 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-
-body {
-  background-color: yellow;
-}
-.sokKnapp1 {
-  color: rgb(33, 50, 84);
+.filterKnapp {
+  font-family: 'Swansea', sans-serif;
+  background-color: white;
+  color:rgb(33, 50, 84);
+  font-size: 15px;
   border: none;
   cursor: pointer;
 }
 
-
-.sokbar1 {
+.filter {
   position: relative;
   display: inline-block;
 }
 
-.sokinnhold1 {
+.filterinnhold {
   display: none;
   position: absolute;
   background-color: white;
   min-width: 160px;
+  width: 20rem;
+  height: 40rem;
+  padding: 2rem;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
-.dropdown-content a {
-  color: black;
+.filterinnhold a {
+  color: rgb(33, 50, 84);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
-.sokbar1 a:hover {background-color: #ddd;}
-
-.show {display: block;}
-
-#sokMeny1 {
-  width: fit-content;
-  margin: auto;
-  height: fit-content;
-  position: fixed;
-  top: 5rem;
-  left: 40rem;
-}
-.tekst {
-  margin: auto;
-  width: 30rem;
-  height: 1.8rem;
-  margin: 1rem;
+.tittelfilter {
+  margin-left: 9rem;
+  padding-bottom: 1rem;
+  width: 11rem;
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  justify-content: space-between;
 }
-.skrive {
-  margin: auto;
-  width: 30rem;
-  height: 1.8rem;
-  margin: 1rem;
+.viderefilter {
   display: flex;
   flex-direction: row;
-  align-content: space-between;
+  justify-content: space-between;
 }
-.text {
-  width: 25rem;
+.filterknapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.sokenter {
-  margin: auto;
-  width: 3rem;
-  height: 2rem;
-  background-color: rgb(33, 50, 84);
-  color: white;
+.fjern {
+  margin-left: 3.5rem;
+  width: 6rem;
+  height: 3rem;
+  background-color: #ddd;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-.forslag {
-  width: 30rem;
-  height: auto;
-  margin: auto;
+.vis {
+  margin-right: 3.5rem;
+  width: 6rem;
+  height: 3rem;
+  background-color: black;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
+  align-items: center;
 }
-.populere {
-  margin: 2rem;
+
+.filter a:hover {
+  background-color: #e8e8e8;
 }
-.nye {
-  margin: 2rem;
+.filterKnapp {
+color: rgb(33, 50, 84);
+border: none;
+cursor: pointer;
 }
-.glass {
-  position: absolute;
-  top: 3rem;
-  left: 70rem;
+.show {
+  display: block;
 }
 </style>
 </head>
-<body style="background-color:yellow;">
-<div class="glass">
-  <div class="sokefunksjon">
-    <button onclick="sokFunksjon2()">
-      <img class="ikon sokKnapp" src="icons/sok.svg" alt="">
-    </button>
-    <div id="sokMeny1" class="sokinnhold">
-      <div class="sokboks">
-        <div class="sokbar">
-            <div class="tekst">
-                <h4>Hva ser du etter?</h4>
-                  <div class="ikon"><img src="icons/kryss.svg" alt=""></div>
-              </div>
-              <div class="skrive">
-                <input type="text" placeholder="Skriv her...">
-                  <div class="sokenter">
-                    <h5>Søk</h5>
-                  </div>
-              </div>
-          </div>
-          <div class="forslag">
-            <div class="populere">
-                <h4>Populære søk</h4>
-                  <ul>
-                    <li><p>Jakke</p></li>
-                      <li><p>Bukse</p></li>
-                      <li><p>kjole</p></li>
-                  </ul>
-              </div>
-              <div class="nye">
-                <h4>Nyheter</h4>
-                  <ul>
-                    <li><p>Jakke</p></li>
-                      <li><p>Bukse</p></li>
-                      <li><p>kjole</p></li>
-                  </ul>
-              </div>
-          </div>
-      </div>	
+<body>
+  <div class="knapper">
+    <div class="sorter">
+        <div class="tekst-ikon">
+            <button onclick="sorteringsFunksjon()" class="sorterKnapp"><h4>Sorter etter</h4></button>
+            <div class="ikon"><img src="icons/pilned.svg" alt=""></div>
+        </div>
+        <div id="sorteringsMeny" class="sorteringsinnhold">
+            <h4><a href="mest_kjopt.html">Mest kjøpt</a></h4>
+            <h4><a href="nyheter.html">Nyheter</a></h4>
+            <h4><a href="#hoy">Høyest pris</a></h4>
+            <h4><a href="#lav">Lavest pris</a></h4>
+            <h4><a href="tilbud.html">Tilbud</a></h4>
+        </div>
     </div>
+    <div class="filter">
+      <div class="tekst-ikon"></div>
+        <button onclick="filterFunksjon()" class="filterKnapp"><h4>Filter </h4></button>
+        <div class="ikon"><img src="icons/filter.svg" alt=""></div>
+      </div>
+      <div id="filterMeny" class="filterinnhold">
+        <div class="tittelfilter">
+          <h4>Filter</h4>
+          <div class="ikon"><img src="icons/kryss.svg" alt=""></div>
+        </div>
+        <div class="viderefilter">
+          <h4>Prisklasse</h4>
+          <div class="ikon"><img src="icons/pluss.svg" alt=""></div>
+        </div>
+        <div class="viderefilter">
+          <h4>Farge</h4>
+          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+        </div>
+        <div class="viderefilter">
+          <h4>Størrelse</h4>
+          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+        </div>
+        <div class="viderefilter">
+          <h4>Produkttype</h4>
+          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+        </div>
+        <div class="viderefilter">
+          <h4>Stil</h4>
+          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+        </div>
+        <div class="viderefilter">
+          <h4>Passform</h4>
+          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+        </div>
+        <div class="filterknapper">
+          <div class="fjern">
+            <h4>Fjern</h4>
+          </div>
+          <div class="vis">
+            <h5>Vis</h5>
+          </div>
+        </div>
+      </div>
   </div>
-</div>
+  <script>
+      function filterFunksjon() {
+    document.getElementById("filterMeny").classList.toggle("show");
+  }
 
-<script>
-
-function sokFunksjon2() {
-  document.getElementById("sokMeny2").classList.toggle("show");
-}
-
-
-window.onclick = function(event) {
-  if (!event.target.matches('.sokKnapp')) {
-    var dropdowns = document.getElementsByClassName("sokinnhold");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+  window.onclick = function(event) {
+    if (!event.target.matches('.filterKnapp')) {
+      var dropdowns = document.getElementsByClassName("fiterinnhold");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
       }
     }
   }
-}
-</script>
-
+  </script>
 </body>
 </html>
