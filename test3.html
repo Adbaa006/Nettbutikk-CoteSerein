@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <button id="openBtn">Åpne meny</button>
+
+    <div id="dropdown" style="display: none;">
+    <p>Innhold i dropdown</p>
+    <button id="closeBtn">Lukk</button>
+    </div>
+    <script>
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const dropdown = document.getElementById('dropdown');
+
+        openBtn.addEventListener('click', () => {
+        dropdown.style.display = 'block';
+        });
+
+        closeBtn.addEventListener('click', () => {
+        dropdown.style.display = 'none';
+        });
+    </script>
+</body> 
+</body>
+</html>
