@@ -23,124 +23,12 @@
   border: none;
   cursor: pointer;
 }
-.fargeKnapp {
-  font-family: 'Swansea', sans-serif;
-  background-color: white;
-  color:rgb(33, 50, 84);
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.storrelseKnapp {
-  font-family: 'Swansea', sans-serif;
-  background-color: white;
-  color:rgb(33, 50, 84);
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.typeKnapp {
-  font-family: 'Swansea', sans-serif;
-  background-color: white;
-  color:rgb(33, 50, 84);
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.stilKnapp {
-  font-family: 'Swansea', sans-serif;
-  background-color: white;
-  color:rgb(33, 50, 84);
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
-.passKnapp {
-  font-family: 'Swansea', sans-serif;
-  background-color: white;
-  color:rgb(33, 50, 84);
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
 
 .filter {
   position: relative;
   display: inline-block;
 }
 .filterinnhold {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  width: 20rem;
-  height: 40rem;
-  padding: 2rem;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.prisinnhold {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  width: 20rem;
-  height: 40rem;
-  padding: 2rem;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.fargeinnhold {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  width: 20rem;
-  height: 40rem;
-  padding: 2rem;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.storrelseinnhold {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  width: 20rem;
-  height: 40rem;
-  padding: 2rem;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.typeinnhold {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  width: 20rem;
-  height: 40rem;
-  padding: 2rem;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.stilinnhold {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  width: 20rem;
-  height: 40rem;
-  padding: 2rem;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.passinnhold {
   display: none;
   position: absolute;
   background-color: white;
@@ -159,42 +47,7 @@
   text-decoration: none;
   display: block;
 }
-.prisinnhold a {
-  color: rgb(33, 50, 84);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.fargeinnhold a {
-  color: rgb(33, 50, 84);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.storrelseinnhold a {
-  color: rgb(33, 50, 84);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.typeinnhold a {
-  color: rgb(33, 50, 84);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.stilinnhold a {
-  color: rgb(33, 50, 84);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-.passinnhold a {
-  color: rgb(33, 50, 84);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+
 .tittelfilter {
   margin-left: 9rem;
   padding-bottom: 1rem;
@@ -247,31 +100,7 @@ color: rgb(33, 50, 84);
 border: none;
 cursor: pointer;
 }
-.fargeKnapp {
-color: rgb(33, 50, 84);
-border: none;
-cursor: pointer;
-}
-.storrelseKnapp {
-color: rgb(33, 50, 84);
-border: none;
-cursor: pointer;
-}
-.typeKnapp {
-color: rgb(33, 50, 84);
-border: none;
-cursor: pointer;
-}
-.stilKnapp {
-color: rgb(33, 50, 84);
-border: none;
-cursor: pointer;
-}
-.passKnapp {
-color: rgb(33, 50, 84);
-border: none;
-cursor: pointer;
-}
+
 .show {
   display: block;
 }
@@ -311,55 +140,80 @@ cursor: pointer;
               <img src="icons/pluss.svg" alt="">
             </div>
         <div class="viderefilter">
-          <button onclick="fargeFunksjon()" class="fargeKnapp"><h4>Farge</h4></button>
-          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+          <button id="opneFarge">Farge</button>
+          <div id="fargedrop" style="display: none;">
+              <div class="fargeinnhold">
+                  <div class="tittelfilter">
+                      <h4>Farge</h4>
+                      <button id="lukkFarge"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                  </div>
+                  <div class="pass">Tett</div>
+                  <div class="pass">Tett</div>
+                  <div class="pass">Tett</div>
+                  <div class="pass">Tett</div>
+              </div>
+          </div>
         </div>
-        <div id="fargeMeny" class="fargeinnhold">
-          <div class="farge"><h4>Rosa</h4></div>
-          <div class="farge"><h4>Rosa</h4></div>
-          <div class="farge"><h4>Rosa</h4></div>
-          <div class="farge"><h4>Rosa</h4></div>
+    <div class="viderefilter">
+        <button id="opneStrl">Størrelse</button>
+        <div id="strldrop" style="display: none;">
+            <div class="strlinnhold">
+                <div class="tittelfilter">
+                    <h4>Størrelse</h4>
+                    <button id="lukkStrl"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
         </div>
-        <div class="viderefilter">
-          <button onclick="storrelseFunksjon()" class="storrelseKnapp"><h4>Størrelse</h4></button>
-          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+    </div>
+    <div class="viderefilter">
+        <button id="opneType">Produkttype</button>
+        <div id="typedrop" style="display: none;">
+            <div class="typeinnhold">
+                <div class="tittelfilter">
+                    <h4>Produkttype</h4>
+                    <button id="lukkType"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
         </div>
-        <div id="storrelseMeny" class="storrelseinnhold">
-          <div class="storrelse">L</div>
-          <div class="storrelse">L</div>
-          <div class="storrelse">L</div>
-          <div class="storrelse">L</div>
+    </div>
+    <div class="viderefilter">
+        <button id="opneStil">Stil</button>
+        <div id="stildrop" style="display: none;">
+            <div class="stilinnhold">
+                <div class="tittelfilter">
+                    <h4>Stil</h4>
+                    <button id="lukkStil"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
         </div>
-        <div class="viderefilter">
-          <button onclick="typeFunksjon()" class="typeKnapp"><h4>Produkttype</h4></button>
-          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
+    </div>
+    <div class="viderefilter">
+        <button id="opnePass">Passform</button>
+        <div id="passdrop" style="display: none;">
+            <div class="passinnhold">
+                <div class="tittelfilter">
+                    <h4>Passform</h4>
+                    <button id="lukkPass"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
         </div>
-        <div id="typeMeny" class="typeinnhold">
-          <div class="type">Bomull</div>
-          <div class="type">Bomull</div>
-          <div class="type">Bomull</div>
-          <div class="type">Bomull</div>
-        </div>
-        <div class="viderefilter">
-          <button onclick="stilFunksjon()" class="stilKnapp"><h4>Stil</h4></button>
-          <div class="ikon"><img src="icons/pilhoyre.svg" alt=""></div>
-        </div>
-        <div id="stilMeny" class="stilinnhold">
-          <div class="stil">Baggy</div>
-          <div class="stil">Baggy</div>
-          <div class="stil">Baggy</div>
-          <div class="stil">Baggy</div>
-        </div>
-        <div class="viderefilter">
-          <button onclick="passFunksjon()" class="passKnapp"><h4>Passform</h4></button>
-          <div class="ikon"><img src="icons/kryss.svg" alt=""></div>
-        </div>
-        <div id="passMeny" class="passinnhold">
-          <div class="pass">Tett</div>
-          <div class="pass">Tett</div>
-          <div class="pass">Tett</div>
-          <div class="pass">Tett</div>
-        </div>
+    </div>
         <div class="filterknapper">
           <div class="fjern">
             <h4>Fjern</h4>
@@ -380,28 +234,61 @@ function prisFunksjon() {
   document.getElementById("prisMeny").classList.toggle("show");
 }
 
-function fargeFunksjon() {
-  document.getElementById("fargeMeny").classList.toggle("show");
-}
+const openPass = document.getElementById('opnePass');
+const lukkPass = document.getElementById('lukkPass');
+const passdrop = document.getElementById('passdrop');
+const opneFarge = document.getElementById('opneFarge');
+const lukkFarge = document.getElementById('lukkFarge');
+const fargedrop = document.getElementById('fargedrop');
+const opneStrl = document.getElementById('opneStrl');
+const lukkStrl = document.getElementById('lukkStrl');
+const strldrop = document.getElementById('strldrop');
+const opneType = document.getElementById('opneType');
+const lukkType = document.getElementById('lukkType');
+const typedrop = document.getElementById('typedrop');
+const opneStil = document.getElementById('opneStil');
+const lukkStil = document.getElementById('lukkStil');
+const stildrop = document.getElementById('stildrop');
 
-function storrelseFunksjon() {
-  document.getElementById("storrelseMeny").classList.toggle("show");
-}
+opnePass.addEventListener('click', () => {
+passdrop.style.display = 'block';
+});
 
-function typeFunksjon() {
-  document.getElementById("typeMeny").classList.toggle("show");
-}
+lukkPass.addEventListener('click', () => {
+passdrop.style.display = 'none';
+});
 
-function stilFunksjon() {
-  document.getElementById("stilMeny").classList.toggle("show");
-}
+opneStil.addEventListener('click', () => {
+stildrop.style.display = 'block';
+});
 
-function passFunksjon() {
-  document.getElementById("passMeny").classList.toggle("show");
-}
-function lukkFunksjon() {
-  document.getElementById("lukkKnapp").classList.toggle("show")
-}
+lukkStil.addEventListener('click', () => {
+stildrop.style.display = 'none';
+});
+
+opneType.addEventListener('click', () => {
+typedrop.style.display = 'block';
+});
+
+lukkType.addEventListener('click', () => {
+typedrop.style.display = 'none';
+});
+
+opneStrl.addEventListener('click', () => {
+strldrop.style.display = 'block';
+});
+
+lukkStrl.addEventListener('click', () => {
+strldrop.style.display = 'none';
+});
+
+opneFarge.addEventListener('click', () => {
+fargedrop.style.display = 'block';
+});
+
+lukkFarge.addEventListener('click', () => {
+fargedrop.style.display = 'none';
+});
 
   </script>
   <script src="javascript/script.js"></script>

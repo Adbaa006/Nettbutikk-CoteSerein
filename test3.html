@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <button id="openBtn">Åpne meny</button>
@@ -12,17 +13,137 @@
     <p>Innhold i dropdown</p>
     <button id="closeBtn">Lukk</button>
     </div>
-    <script>
-        const openBtn = document.getElementById('openBtn');
-        const closeBtn = document.getElementById('closeBtn');
-        const dropdown = document.getElementById('dropdown');
 
-        openBtn.addEventListener('click', () => {
-        dropdown.style.display = 'block';
+    <div class="farge">
+        <button id="opneFarge">Farge</button>
+        <div id="fargedrop" style="display: none;">
+            <div class="fargeinnhold">
+                <div class="tittelfilter">
+                    <h4>Farge</h4>
+                    <button id="lukkFarge"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
+        </div>
+    </div>
+    <div class="storrelse">
+        <button id="opneStrl">Størrelse</button>
+        <div id="strldrop" style="display: none;">
+            <div class="strlinnhold">
+                <div class="tittelfilter">
+                    <h4>Størrelse</h4>
+                    <button id="lukkStrl"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
+        </div>
+    </div>
+    <div class="produkttype">
+        <button id="opneType">Produkttype</button>
+        <div id="typedrop" style="display: none;">
+            <div class="typeinnhold">
+                <div class="tittelfilter">
+                    <h4>Produkttype</h4>
+                    <button id="lukkType"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
+        </div>
+    </div>
+    <div class="stil">
+        <button id="opneStil">Stil</button>
+        <div id="stildrop" style="display: none;">
+            <div class="stilinnhold">
+                <div class="tittelfilter">
+                    <h4>Stil</h4>
+                    <button id="lukkStil"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
+        </div>
+    </div>
+    <div class="passform">
+        <button id="opnePass">Passform</button>
+        <div id="passdrop" style="display: none;">
+            <div class="passinnhold">
+                <div class="tittelfilter">
+                    <h4>Passform</h4>
+                    <button id="lukkPass"><div class="ikon"><img src="icons/kryss.svg" alt=""></div></button>
+                </div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+                <div class="pass">Tett</div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const openPass = document.getElementById('opnePass');
+        const lukkPass = document.getElementById('lukkPass');
+        const passdrop = document.getElementById('passdrop');
+        const opneFarge = document.getElementById('opneFarge');
+        const lukkFarge = document.getElementById('lukkFarge');
+        const fargedrop = document.getElementById('fargedrop');
+        const opneStrl = document.getElementById('opneStrl');
+        const lukkStrl = document.getElementById('lukkStrl');
+        const strldrop = document.getElementById('strldrop');
+        const opneType = document.getElementById('opneType');
+        const lukkType = document.getElementById('lukkType');
+        const typedrop = document.getElementById('typedrop');
+        const opneStil = document.getElementById('opneStil');
+        const lukkStil = document.getElementById('lukkStil');
+        const stildrop = document.getElementById('stildrop');
+
+        opnePass.addEventListener('click', () => {
+        passdrop.style.display = 'block';
         });
 
-        closeBtn.addEventListener('click', () => {
-        dropdown.style.display = 'none';
+        lukkPass.addEventListener('click', () => {
+        passdrop.style.display = 'none';
+        });
+
+        opneStil.addEventListener('click', () => {
+        stildrop.style.display = 'block';
+        });
+
+        lukkStil.addEventListener('click', () => {
+        stildrop.style.display = 'none';
+        });
+
+        opneType.addEventListener('click', () => {
+        typedrop.style.display = 'block';
+        });
+
+        lukkType.addEventListener('click', () => {
+        typedrop.style.display = 'none';
+        });
+
+        opneStrl.addEventListener('click', () => {
+        strldrop.style.display = 'block';
+        });
+
+        lukkStrl.addEventListener('click', () => {
+        strldrop.style.display = 'none';
+        });
+
+        opneFarge.addEventListener('click', () => {
+        fargedrop.style.display = 'block';
+        });
+
+        lukkFarge.addEventListener('click', () => {
+        fargedrop.style.display = 'none';
         });
     </script>
 </body> 
