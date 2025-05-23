@@ -641,3 +641,51 @@ input {
     display: flex;
     justify-content: center;
 }
+.handlekurv-layout {
+    width: 90rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.varer {
+    display: grid;
+    width: 40rem;
+    display: grid;
+    grid-template-columns: 10rem 10rem;
+    grid-template-rows: 13rem ;
+    grid-template-areas: 
+    'vare1 vare2'
+    'vare3 vare4'
+    'vare5 vare6';
+    gap: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    justify-content: space-around;
+}
+.vare1,
+.vare2,
+.vare3,
+.vare4,
+.vare5,
+.vare6 {
+    display: flex;
+    flex-direction: row;
+}
+.betaling {
+    margin: auto;
+    position: sticky;
+    /*padding-left: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 5rem;*/
+    width: 20rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: ;
+}
+.rader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
