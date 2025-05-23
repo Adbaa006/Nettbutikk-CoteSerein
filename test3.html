@@ -89,7 +89,27 @@
             </div>
         </div>
     </div>
+    <div class="viderefilter">
+          <button id="opnePris">
+            <div>Pris</div>
+            <img src="icons/pluss.svg" alt="">
+            </button>
+          <div id="prisdrop" style="display: none;">
+              <div class="fargeinnhold">
+                  <div class="tittelfilter">
+                      <h4>Farge</h4>
+                      <button id="lukkFarge"><div class="ikon"><img src="icons/minus.svg" alt=""></div></button>
+                  </div>
+                  <img src="icons/minus.svg" alt="">
+                    <img src="icons/pluss.svg" alt="">
+                </div>
+          </div>
+    </div>
+    <div onclick="myFunction(this)" class="lik"><img src="icons/likt.svg" alt=""></div>
     <script>
+        function myFunction(x) {
+            x.classList.toggle("");
+        }
         const openPass = document.getElementById('opnePass');
         const lukkPass = document.getElementById('lukkPass');
         const passdrop = document.getElementById('passdrop');
