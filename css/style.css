@@ -404,6 +404,9 @@ ul.breadcrumb li a:hover {
   width: 25rem;
   outline: auto;
 }
+input {
+    border: black 2px;
+}
 .sokenter {
   margin: auto;
   width: 3rem;
