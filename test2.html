@@ -7,131 +7,155 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.minSlide {display: none}
+img {vertical-align: middle;}
 
-
-
-.kurv1 {
+/* Slideshow container */
+.slideshow-container {
+  max-width: 640px;
   position: relative;
-  display: inline-block;
+  margin: auto;
 }
 
-.kurvinnhold {
-    width: 30rem;
-  display: none;
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.kurvinnhold a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
-.kurv1:hover .kurvinnhold {display: block;}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(85, 85, 85, 0.8);
+}
 
-.vare {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.2s ease;
 }
-.bilde {
-    width: 10rem;
+
+.active, .dot:hover {
+  background-color: #717171;
 }
-.beskrivelse {
-    width: 15rem;
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 </style>
+</head>
 <body>
-   <div class="container-forsteside">
-            <img src="images/ChatGPT Image 9. mai 2025, 11_10_26.png" alt="">
-            <div class="top-right">
-                <div class="person">
-                    <a href="logginn.html">
-                        <div><img src="icons/logginn.svg" alt=""></div>
-                    </a>
+
+<div class="slideshow-container">
+    <div class="minSlide fade">
+    <div class="container-produktbilde">
+            <img src="images/sandalerforfra.webp" alt="">
+            <div class="overst-hoyre">
+                <div><img src="icons/likt.svg" alt="">
                 </div>
-                <div class="hjerte">
-                    <a href="favoritter.html">
-                        <div><img src="icons/likt.svg" alt=""></div>
-                    </a>
-                </div>
-                <div class="kurv">
-                    <div class="kurv1">
-                        <button class="kurvKnapp">
-                            <a href="handlekurv.html">
-                            <div><img src="icons/vogn.svg" alt=""></div>
-                            </a>
-                        </button>
-                            <div class="kurvinnhold">
-                                <div class="vare">
-                                    <div class="bilde">woop</div>
-                                    <div class="beskrivelse">hei</div>
-                                </div>
-                                <div class="vare">
-                                    <div class="bilde">woop</div>
-                                    <div class="beskrivelse">hei</div>
-                                </div>
-                                <div class="vare">
-                                    <div class="bilde">woop</div>
-                                    <div class="beskrivelse">hei</div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-                <div class="glass">
-                    <div class="sokefunksjon">
-                        <button onclick="sokFunksjon()">
-                            <img class="sokKnapp" src="icons/sok.svg" alt="">
-                        </button>
-                        <div id="sokMeny" class="sokinnhold">
-                            <div class="sokboks">
-                                <div class="sokbar">
-                                    <div class="tekst">
-                                        <h4>Hva ser du etter?</h4>
-                                        <div class="ikon1"><img src="icons/kryss.svg" alt=""></div>
-                                    </div>
-                                    <div class="skrive">
-                                        <input type="text" placeholder="Skriv her...">
-                                        <div class="sokenter">
-                                            <h5>Søk</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="forslag">
-                                    <div class="populere">
-                                        <h4>Populære søk</h4>
-                                        <ul>
-                                            <li><p>Jakke</p></li>
-                                            <li><p>Bukse</p></li>
-                                            <li><p>kjole</p></li>
-                                        </ul>
-                                    </div>
-                                    <div class="nye">
-                                        <h4>Nyheter</h4>
-                                        <ul>
-                                            <li><p>Jakke</p></li>
-                                            <li><p>Bukse</p></li>
-                                            <li><p>kjole</p></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>	
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="centered"> <a href="index.html"><h1>Côte Serein</h1></a></div>
-            <div class="centered_lower">
-                <a href="dame1.html"><div><h2>Dame</h2></div></a>
-                <a href="herre1.html"><div><h2>Herre</h2></div></a>
-                <a href="barn1.html"><div><h2>Barn</h2></div></a>
-                <a href="accessories1.html"><div><h2>Accessories</h2></div></a>
             </div>
         </div> 
+    </div>
+
+    <div class="minSlide fade">
+    <div class="container-produktbilde">
+            <img src="images/sandaleroven.webp" alt="">
+            <div class="overst-hoyre">
+                <div><img src="icons/likt.svg" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="minSlide fade">
+    <div class="container-produktbilde">
+            <img src="images/sandalerner.webp" alt="">
+            <div class="overst-hoyre">
+                <div><img src="icons/likt.svg" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <div class="minSlide fade">
+        <div class="container-produktbilde">
+            <img src="images/tskjorte.webp" alt="">
+            <div class="overst-hoyre">
+                <div><img src="icons/likt.svg" alt="">
+                </div>
+            </div>
+        </div> 
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+<br>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function gjeldeneSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("minSlide");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
 </body>
 </html>
