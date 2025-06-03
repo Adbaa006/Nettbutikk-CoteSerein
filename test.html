@@ -100,6 +100,10 @@ color: rgb(33, 50, 84);
 border: none;
 cursor: pointer;
 }
+.prisinnhold {
+  display: flex;
+  flex-direction: row;
+}
 
 .show {
   display: block;
@@ -234,7 +238,7 @@ function prisFunksjon() {
   document.getElementById("prisMeny").classList.toggle("show");
 }
 
-const openPass = document.getElementById('opnePass');
+const opnePass = document.getElementById('opnePass');
 const lukkPass = document.getElementById('lukkPass');
 const passdrop = document.getElementById('passdrop');
 const opneFarge = document.getElementById('opneFarge');
